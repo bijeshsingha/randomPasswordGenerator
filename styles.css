@@ -94,6 +94,8 @@ body {
 }
 
 .container {
+    margin-top: 10%;
+    margin-bottom: auto;
     margin-inline: auto;
     max-width: 80rem;
     width: 550px;
