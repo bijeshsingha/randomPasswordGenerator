@@ -163,7 +163,7 @@ button {
     height: 42px;
     border-radius: 6px;
     background: #10B981;
-    
+    border: none; 
     margin-top: 25px;
 }
 
