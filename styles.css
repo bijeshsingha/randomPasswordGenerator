@@ -1,0 +1,226 @@
+
+
+
+body {
+    margin: 0;
+}
+
+
+:root {
+    /* colors */
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    --clr-darkBlue: #1F2937;
+
+    
+    /* font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+    
+    /* font-families */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+}
+
+/* colors */
+
+.bg-dark { background-color: hsl( var(--clr-dark) );}
+.bg-accent { background-color: hsl( var(--clr-light) );}
+.bg-white { background-color: hsl( var(--clr-white) );}
+.bg-dblue { background: #1F2937;}
+
+.text-dark { color: hsl( var(--clr-dark) );}
+.text-accent { color: hsl( var(--clr-light) );}
+.text-white { color: hsl( var(--clr-white) );}
+.text-dblue { color: #4ADF86;}
+
+/* typography */
+.ff-serif { font-family: var(--ff-serif); } 
+.ff-sans-cond { font-family: var(--ff-sans-cond); } 
+.ff-sans-normal { font-family: var(--ff-sans-normal); } 
+
+.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; } 
+
+.uppercase { text-transform: uppercase; }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+/* utility classes */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.top-align {
+	vertical-align: top;
+}  
+
+.center-align {
+  	vertical-align: middle;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 80rem;
+    width: 550px;
+    height: 550px;
+    border: none;
+    border-radius: 2px;
+}
+
+.sr-only {
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* actual styles */
+
+
+.p{
+    margin-left: 52px;
+    font-family: 'Karla';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */ 
+
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    font-family: Inter;
+    margin-left: 52px;
+    margin-top: -10px;
+    font-weight: 400;
+    color: #D5D4D8;
+    letter-spacing: 0.03em;
+}
+
+button {
+    
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-family: Inter;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 42px;
+    border-radius: 6px;
+    background: #10B981;
+    
+    margin-top: 25px;
+}
+
+button:hover {background-color: #2d9c31}
+
+button:active {
+  background-color: #2d9c31;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+
+.line {
+    
+    margin-left: 52px;
+    margin-top: 35px;
+    
+    width: 446px;
+    height: 0px;
+    left: 52px;
+    top: 361px;
+
+    border: 1px solid #2F3E53;
+}
+
+
+.inputs {
+    margin-left: 52px;
+    display: flex;
+    flex-direction: column;
+}
+
+.passwords {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-left: 52px;
+    margin-right: 52px;
+    color: #55F991;
+}
+
+.box {
+    text-align: center;
+    background: #273549;
+    border-radius: 6px;
+    width: 211px;
+    height: 39px;
+    
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.checkbox {
+    font-family: Inter;
+    color: #D5D4D8;
+    letter-spacing: 0.03em;
+}
+
+
